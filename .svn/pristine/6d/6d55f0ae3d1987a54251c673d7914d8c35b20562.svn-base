@@ -1,0 +1,40 @@
+@mixin font {
+    color: #fff;
+}
+
+@mixin main-layout {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+@mixin border-radius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/* Colors
+-------------------------- */
+$wb-theme-color: #5584FF;
+$font-family:"Microsoft YaHei",
+"微软雅黑",
+Arial,
+'Helvetica Neue',
+Helvetica,
+"PingFang SC",
+"Hiragino Sans GB",
+sans-serif;
+
+

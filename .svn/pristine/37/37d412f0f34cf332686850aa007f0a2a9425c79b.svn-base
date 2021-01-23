@@ -1,0 +1,7 @@
+/*
+ * @Description: 工具类
+ * @Author: liuqiyu
+ */
+
+export * from './common'
+export * from './typeof'

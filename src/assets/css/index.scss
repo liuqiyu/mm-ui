@@ -1,0 +1,51 @@
+/**
+ 样式文件入口
+ */
+
+@import "reset";
+@import "./element-variables.scss";
+@import "dialog";
+
+// 解决饿了么列表出现滚动条时 导致的表头错位
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+// 解决小屏分辨率下 日期组组件显示被遮住的问题
+.asp-smart-table{
+  .el-date-editor{
+      .el-input__inner{
+          padding-right:0;
+      }
+  }
+}
+
+.sortable-ghost {
+  opacity: 0.8;
+  color: #fff !important;
+  background: #42b983 !important;
+}
+
+.asp-smart-dialog-dynamic {
+
+  .el-table--border th:first-child .cell,
+  .el-table--border td:first-child .cell {
+    padding-left: 4px;
+  }
+
+  .el-table {
+    .cell {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    .el-table__expanded-cell[class*=cell] {
+      padding: 20px 20px;
+    }
+
+    .el-input__inner {
+      padding: 0 6px;
+    }
+  }
+}

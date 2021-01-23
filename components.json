@@ -1,0 +1,4 @@
+{
+  "test": "./src/components/advanced/test/index.js",
+  "bob": "./src/components/advanced/bob/index.js"
+}

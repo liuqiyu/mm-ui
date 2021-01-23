@@ -1,0 +1,17 @@
+<template>
+  <div class="asp-bob">bob</div>
+</template>
+
+<script>
+import mixins from '@/utils/mixins/index.js'
+import { isArray } from '@/utils/utils'
+
+export default {
+  name: 'asp-bob',
+  mixins: [mixins],
+  mounted () {
+    const a = []
+    console.log(isArray(a))
+  }
+}
+</script>
